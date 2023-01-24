@@ -42,7 +42,7 @@ const Shop = () => {
 
 
 
-        fetch('http://localhost:5000/productsByIds', {
+        fetch(`http://localhost:5000/productsByIds1`, {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'
