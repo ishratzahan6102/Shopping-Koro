@@ -12,6 +12,15 @@ import Shipping from './components/Shipping/Shipping';
 import PrivateRoute from './routes/PrivateRoute';
 
 
+
+// count  : loaded
+// perPage (size) : 10 
+// pages : count / perPage
+// currentPage : (page)
+
+
+
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -20,7 +29,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('products.json'),
+          loader: () => fetch('http://localhost:5000/products'),
           element: <Shop></Shop>
         },
         {
