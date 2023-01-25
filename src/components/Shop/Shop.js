@@ -15,7 +15,7 @@ const Shop = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/products?page=${page}&size=${size}`
+        const url = `https://shopping-koro-server-ishratzahan6102.vercel.app/products?page=${page}&size=${size}`
         fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -42,7 +42,7 @@ const Shop = () => {
 
 
 
-        fetch(`http://localhost:5000/productsByIds1`, {
+        fetch(`https://shopping-koro-server-ishratzahan6102.vercel.app/productsByIds1`, {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

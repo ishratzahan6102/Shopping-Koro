@@ -8,7 +8,7 @@ const Header = () => {
     const { user, logOut } = useContext(AuthContext)
     return (
         <nav className='header'>
-            <img src={logo} alt="" />
+           <p>Shopping Koro</p>
             <div>
                 <Link to="/">Shop</Link>
                 <Link to="/orders">Orders</Link>

@@ -9,6 +9,7 @@ const Product = ({product, handleAddToCart}) => {
     
     return (
         <div className='product'>
+            
             <img src={img} alt=""></img>
             <div className='product-info'>
                 <p className='product-name'>{name}</p>
@@ -21,6 +22,7 @@ const Product = ({product, handleAddToCart}) => {
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
         </div>
+        
     );
 };
 

@@ -29,7 +29,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch(`http://localhost:5000/products`),
+          loader: () => fetch(`https://shopping-koro-server-ishratzahan6102.vercel.app/products`),
           element: <Shop></Shop>
         },
         {
